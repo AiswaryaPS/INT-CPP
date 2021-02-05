@@ -1,6 +1,8 @@
+#include <gtest/test.h>
+#include "/home/ctea/Documents/cal.h"
 
-include<gtest/test.h>
-#include"calc.h"
+namespace{
+
 TEST(CalculatorTest,addition){
     EXPECT_EQ(100,addition(80,20));
     EXPECT_EQ(60,addition(80,-20));
@@ -27,4 +29,4 @@ int main(int argc,char **argv){
     return RUN_ALL_TESTS();
 }
 
-
+}
